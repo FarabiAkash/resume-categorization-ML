@@ -8,3 +8,49 @@ This project categorizes resumes into respective domain categories (e.g., sales,
 - Install required Python packages by running:
   ```bash
   pip install -r requirements.txt
+
+
+## Directory Structure
+- **dataset/data/data/**: Contains the resumes arranged in category folders.
+- **dataset/task_result/models/**: Contains the resumes arranged in category folders.
+- **dataset/task_result/categorized_resumes/**: Contains the resumes arranged in category folders.
+- **dataset/task_result/csv_resume/**: Contains the resumes arranged in category folders.
+
+
+## How to Use
+
+1. Train the Model
+- Ensure resumes are placed in dataset/data/data/, categorized into subdirectories.
+- Split the data, preprocess, and train the model.
+- Save the trained model and vectorizer in dataset/new/models/.
+
+2. Run the Categorization Script
+- Run the categorization script with the following command:
+  ```bash
+  python script.py dataset/data/data
+
+3. Output
+- Categorized resumes will be copied into
+  'dataset/task_result/categorized_resumes/.'
+- The CSV file containing the categorization results will be stored in
+  'dataset/task_result/csv_resume/.'
+
+Notes
+- Original resumes remain in their original directories.
+- The categorization results are saved in a CSV file with two columns: filename and category.
+
+## Additional Setup
+To include these documents in your project, place them in the root of your project directory as follows:
+
+project_root/
+├── README.md
+├── instructions.md
+├── script.py
+├── dataset/
+│   ├── data/
+│   │   └── data/  (Resumes categorized in subdirectories)
+│   └── new/
+│       ├── models/
+│       ├── categorized_resumes/
+│       └── csv_resume/
+└── requirements.txt
