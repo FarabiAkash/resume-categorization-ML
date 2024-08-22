@@ -48,6 +48,5 @@ To include these documents in your project, place them in the root of your proje
   - model_generation.ipynb
   - script.py
   - dataset/
-    - data/
-      -data/ (Resumes categorized in subdirectories)
+    - data/data/ (Resumes categorized in subdirectories)
 - requirements.txt
