@@ -42,15 +42,12 @@ Notes
 ## Additional Setup
 To include these documents in your project, place them in the root of your project directory as follows:
 
-project_root/
-├── README.md
-├── instructions.md
-├── script.py
-├── dataset/
-│   ├── data/
-│   │   └── data/  (Resumes categorized in subdirectories)
-│   └── new/
-│       ├── models/
-│       ├── categorized_resumes/
-│       └── csv_resume/
-└── requirements.txt
+- project_root
+  - README.md
+  - eda.ipynb
+  - model_generation.ipynb
+  - script.py
+  - dataset/
+    - data/
+      -data/ (Resumes categorized in subdirectories)
+- requirements.txt
