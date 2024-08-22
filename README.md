@@ -54,8 +54,8 @@ resume-categorization-ml/
 │       ├── categorized_resumes/  # Categorized resumes in folders, organized by predicted category
 │       └── csv_resume/
 │           └── categorized_resumes.csv  # CSV file with category columns
-├── eda.ipynb                    # Script for categorizing resumes
-├── model_generation.ipynb       # Script for categorizing resumes
+├── eda.ipynb                    # Script for EDA dataset available
+├── model_generation.ipynb       # Script for model training and validation
 ├── script.py                    # Script for categorizing resumes
 ├── requirements.txt             # List of required Python packages
 ├── README.md                    # Readme file with project overview and instructions
