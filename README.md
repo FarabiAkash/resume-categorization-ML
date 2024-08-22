@@ -35,18 +35,29 @@ This project categorizes resumes into respective domain categories (e.g., sales,
 - The CSV file containing the categorization results will be stored in
   'dataset/task_result/csv_resume/.'
 
-Notes
+## Notes
 - Original resumes remain in their original directories.
-- The categorization results are saved in a CSV file with two columns: filename and category.
+- The categorization results are saved in a CSV file
 
-## Additional Setup
-To include these documents in your project, place them in the root of your project directory as follows:
+## Project Directory Structure
 
-- project_root
-  - README.md
-  - eda.ipynb
-  - model_generation.ipynb
-  - script.py
-  - dataset/
-    - data/data/ (Resumes categorized in subdirectories)
-- requirements.txt
+The following is the structure of the project directory for the Resume Categorization Task.
+
+```bash
+resume-categorization-ml/
+├── dataset/
+│   ├── data/
+│   │   └── data/                # Original resumes categorized into folders (e.g., ACCOUNTANT, MARKETING)
+│   └── Resume/                  # Resume.csv categorized resume in .csv file
+│   └── task_result/
+│       ├── models/              # Trained model and vectorizer
+│       ├── categorized_resumes/  # Categorized resumes in folders, organized by predicted category
+│       └── csv_resume/
+│           └── categorized_resumes.csv  # CSV file with category columns
+├── eda.ipynb                    # Script for categorizing resumes
+├── model_generation.ipynb       # Script for categorizing resumes
+├── script.py                    # Script for categorizing resumes
+├── requirements.txt             # List of required Python packages
+├── README.md                    # Readme file with project overview and instructions
+
+
